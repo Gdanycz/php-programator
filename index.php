@@ -2,9 +2,9 @@
 
 $ref = ($_GET["ref"]) ?? "json-vypis";
 
-require("classes/Database.php");
-require("classes/Data.php");
-require("classes/Date.php");
+require("assets/php/classes/Database.php");
+require("assets/php/classes/Data.php");
+require("assets/php/classes/Date.php");
 
 ?>
 
@@ -16,20 +16,20 @@ require("classes/Date.php");
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Test PHP programátora</title>
-    <meta name="description" content="Test PHP Programátora">
+    <title>PHP programátor</title>
+    <meta name="description" content="PHP Programátor">
     <meta name="keywords" content="PHP Programátor">
     <meta name="author" content="Gdany">
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black">
     <meta name=”robots” content="noindex, nofollow">
     <!-- Favicons -->
-    <link href="img/logo.png" rel="icon">
-    <link href="img/logo.png" rel="apple-touch-icon">
+    <link href="assets/img/logo.png" rel="icon">
+    <link href="assets/img/logo.png" rel="apple-touch-icon">
     <!--  Bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!--  Custom styles -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
@@ -71,17 +71,17 @@ require("classes/Date.php");
 
     <footer class="bg-dark text-center">
         <div class="text-center p-3 text-light">
-            © 2023 Test PHP Programátor | Created by 
+            © 2023 PHP Programátor | Created by 
             <a href="https://me.gdany.eu/" class="text-secondary text-decoration-none">Gdany</a>
         </div>
     </footer>
 
     <!--  JQuery -->
-    <script src="js/jquery.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
     <!--  Bootstrap -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
     <!--  Custom js -->
-    <script src="js/main.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

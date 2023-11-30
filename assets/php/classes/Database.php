@@ -4,10 +4,10 @@
 class Database {
     
     public static function connectionDB() {
-        $db_host = "127.0.0.1";
+        $db_host = "localhost";
         $db_user = "root";
         $db_password = "";
-        $db_name = "3it";
+        $db_name = "php_programator";
         
         $connection = "mysql:host=$db_host;dbname=$db_name;charset=utf8";
         
@@ -52,6 +52,23 @@ class Database {
             }
 
             return $insertedCount;
+        } catch (PDOException $e) {
+            echo $e->getMessage();
+            return false;
+        }
+    }
+
+    public static function removeDataFromDB($connection) {
+        try {
+            $removedCount = 0;
+            $sqlDelete = "DELETE FROM zaznamy";
+            $stmtDelete = $connection->prepare($sqlDelete);
+
+            if ($stmtDelete->execute()) {
+                $removedCount = $stmtDelete->rowCount();
+            }
+
+            return $removedCount;
         } catch (PDOException $e) {
             echo $e->getMessage();
             return false;

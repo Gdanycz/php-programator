@@ -8,6 +8,10 @@ $data = Database::getDataFromDB($connection);
 <div class="container py-5">
     <h1 class="text-center text-light pb-3">Výpis dat z databáze</h1>
 
+    <div class="text-center mb-4">
+        <a href="assets/php/aktualizace-dat.php" class="btn btn-primary">Aktualizovat data</a>
+    </div>
+
     <div class="table-responsive">
         <table class="table table-dark table-striped text-center">
             <thead>
@@ -45,8 +49,9 @@ $data = Database::getDataFromDB($connection);
         </table>
         <p class="text-light ms-2">Zobrazeno <?= count($data); ?> záznamů</p>
     </div>
+
     <div class="text-center">
-        <a href="php/aktualizace-dat.php" class="btn btn-primary">Aktualizovat data</a>
+        <a href="assets/php/smazani-dat.php" class="btn btn-primary">Smazat data</a>
     </div>
 
 </div>
