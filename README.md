@@ -1,3 +1,3 @@
-# test-php-programator
+# php-programator
 
-### Live Preview: https://gdany.eu/3it/
+### Live Preview: https://gdany.eu/php_programator/
